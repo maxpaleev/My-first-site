@@ -1,0 +1,26 @@
+{% extends "main/layout.html" %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>Текст</p>
+        <button class="btn btn-warning">На страницу про нас</button>
+        {%  include "main/connect.html" %}
+
+{#  добавление элемента из списка #}
+{#        {% for el in values %}#}
+{#            <P>{{ el }}</P>#}
+{#        {% endfor %}#}
+{#        {% for el in obj %}#}
+{#            <P>{{ el }}</P>#}
+{#        {% endfor %}#}
+
+
+
+
+    </div>
+{% endblock %}
+

@@ -1,0 +1,22 @@
+{% extends "main/layout.html" %}
+
+{% block title %}Домашнее задание{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1>Домашнее задание</h1>
+        {% if work %}
+            {% for el in work %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.day }}</h3>
+                    <a href="{% url 'Detail' el.id%}" class="btn btn-success">Показать ДЗ</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Нет дз</p>
+        {% endif %}
+
+        {%  include "main/connect.html" %}
+    </div>
+{% endblock %}

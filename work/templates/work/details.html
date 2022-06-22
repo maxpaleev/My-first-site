@@ -1,0 +1,19 @@
+{% extends "main/layout.html" %}
+
+{% block title %}{{ Work.day }}{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <div class="alert alert-warning">
+           <h1>{{ Work.day }}</h1>
+            <p>{{ Work.date }}</p>
+            <p>Русский: {{ Work.rus }}</p>
+            <p>Математика: {{ Work.match }}</p>
+            <p>Лит-ра: {{ Work.lit }}</p>
+        </div>
+        <a href="{% url 'WorkDelete' Work.id %}"><button class="btn btn-danger"><i class="fas fa-trash"></i> Удалить</button></a>
+        <a href="{% url 'WorkUpdate' Work.id %}"><button class="btn btn-info"><i class="fas fa-pen"></i> Изменить</button></a>
+        {%  include "main/connect.html" %}
+    </div>
+{% endblock %}

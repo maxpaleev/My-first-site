@@ -1,0 +1,22 @@
+{% extends "main/layout.html" %}
+
+{% block title %}Добавление дз{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+{#        <h1>Добавление дз</h1>#}
+        <form method="post">
+            {%  csrf_token %}
+            <h1>{{ form.day }}</h1><br>
+            {{ form.rus }}<br>
+            {{ form.match }}<br>
+            {{ form.lit }}<br>
+            {{ form.date }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Добавить</button>
+        </form>
+
+
+    </div>
+{% endblock %}
