@@ -32,7 +32,6 @@ class Work(models.Model):
     science = models.CharField('Общество', max_length=50, null=True, blank=True)
     teh = models.CharField('Технология', max_length=50, null=True, blank=True)
     deutsch = models.CharField('Немецкий', max_length=50, null=True, blank=True)
-    date = models.DateTimeField('Дата', null=True, blank=True)
 
     def __str__(self):
         return f'День:{self.day}'
