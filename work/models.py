@@ -17,6 +17,8 @@ elif week.tm_wday == 4:
 elif week.tm_wday == 5:
     day = 'Суббота'
 
+time = week.tm_wday, week.tm_mon, week.tm_year
+
 
 class Work(models.Model):
     day = models.CharField('День недели', max_length=50, default=day, null=True, blank=True)
@@ -32,6 +34,7 @@ class Work(models.Model):
     science = models.CharField('Общество', max_length=50, null=True, blank=True)
     teh = models.CharField('Технология', max_length=50, null=True, blank=True)
     deutsch = models.CharField('Немецкий', max_length=50, null=True, blank=True)
+    date = models.CharField('Дата', max_length=50, null=True, blank=True, default=time)
 
     def __str__(self):
         return f'День:{self.day}'

@@ -6,7 +6,7 @@ class WorkForm(ModelForm):
     class Meta:
         model = Work
         fields = ['day', 'rus', 'match', 'lit', 'bio', 'his', 'geo', 'eng', 'science', 'inf', 'IZO', 'teh',
-                  'deutsch']
+                  'deutsch', 'date']
 
         widgets = {
             'day': TextInput(attrs={
@@ -60,5 +60,9 @@ class WorkForm(ModelForm):
             'deutsch': TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Немецкий'
+            }),
+            'date': TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Дата'
             }),
         }
