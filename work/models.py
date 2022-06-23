@@ -17,7 +17,7 @@ elif week.tm_wday == 4:
 elif week.tm_wday == 5:
     day = 'Суббота'
 
-time = week.tm_wday, week.tm_mon, week.tm_year
+time = week.tm_mday, week.tm_mon, week.tm_year
 
 
 class Work(models.Model):
