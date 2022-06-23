@@ -6,6 +6,7 @@ from .forms import WorkForm
 from django.views.generic import DetailView, UpdateView, DeleteView
 
 Today = time.localtime()
+week = time.localtime()
 
 
 def work_home(request):
@@ -15,8 +16,21 @@ def work_home(request):
 
 class WorkDetail(DetailView):
     model = Work
-    template_name = 'work/details.html'
+    template_name = ''
     context_object_name = 'Work'
+
+    if week.tm_wday == 0:
+        template_name = 'work/details.html'
+    elif week.tm_wday == 1:
+        template_name = 'work/details1.html'
+    elif week.tm_wday == 2:
+        template_name = 'work/details2.html'
+    elif week.tm_wday == 3:
+        template_name = 'work/details3.html'
+    elif week.tm_wday == 4:
+        template_name = 'work/details4.html'
+    elif week.tm_wday == 5:
+        template_name = 'work/details5.html'
 
 
 class WorkUpdate(UpdateView):

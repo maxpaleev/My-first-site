@@ -12,9 +12,9 @@
             <p>Русский: {{ Work.rus }}</p>
             <p>Математика: {{ Work.match }}</p>
             <p>Лит-ра: {{ Work.lit }}</p>
-            <p>История:{{ Work.his }}</p>
-            <p>География:{{ Work.geo }}</p>
-            <p>Обществознание:{{ Work.science }}</p>
+            <p>ИЗО:{{ Work.IZO }}</p>
+            <p>Информатика:{{ Work.inf }}</p>
+            <p>Английский:{{ Work.eng }}</p>
         </div>
         <a href="{% url 'WorkDelete' Work.id %}"><button class="btn btn-danger"><i class="fas fa-trash"></i> Удалить</button></a>
         <a href="{% url 'WorkUpdate' Work.id %}"><button class="btn btn-info"><i class="fas fa-pen"></i> Изменить</button></a>
