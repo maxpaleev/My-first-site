@@ -10,7 +10,7 @@ week = time.localtime()
 
 
 def work_home(request):
-    work = Work.objects.all()
+    work = Work.objects.order_by('-date')
     return render(request, 'work/home.html', {'work': work})
 
 

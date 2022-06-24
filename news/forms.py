@@ -16,7 +16,7 @@ class ArticlesForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Анонс статьи'
             }),
-            'date': DateTimeInput(attrs={
+            'date': TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Дата статьи'
             }),
