@@ -94,7 +94,26 @@ main .cba{
     margin-top: 40%;
 }
 
-main .features p1{
-    /*margin-left: 40%;*/
-    /*margin-top: 770px;*/
+.Work .alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 5px 34%;
+    text-align: center;
+}
+
+.Work h1{
+    font-size: 45px
+}
+
+.Work p{
+    max-width: 700px; margin: 5px auto
+}
+
+.Work {
+    float: left;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
 }

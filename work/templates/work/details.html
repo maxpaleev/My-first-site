@@ -5,8 +5,8 @@
 
 {% block content %}
 
-    <div class="features">
-        <div class="alert alert-warning">
+    <div class="Work">
+        <div class="work alert alert-warning">
            <h1>{{ Work.day }}</h1>
             <p>{{ Work.date }}</p>
             <p>Русский: {{ Work.rus }}</p>
@@ -15,6 +15,16 @@
             <p>История:{{ Work.his }}</p>
             <p>География:{{ Work.geo }}</p>
             <p>Обществознание:{{ Work.science }}</p>
+            <p>Информатика: {{ Work.inf }}</p>
+            <p>Биология:{{ Work.bio }}</p>
+            <p>Английский:{{ Work.eng }} </p>
+            <p>Изо: {{ Work.IZO }}</p>
+            <p>Георграфия: {{ Work.geo }}</p>
+            <p>История: {{ Work.his }}</p>
+            <p>Общество: {{ Work.science }}</p>
+            <p>Технология: {{ Work.teh }}</p>
+            <p>Немецкий: {{ Work.deutsch }}</p>
+
         </div>
         <a href="{% url 'WorkDelete' Work.id %}"><button class="btn btn-danger"><i class="fas fa-trash"></i> Удалить</button></a>
         <a href="{% url 'WorkUpdate' Work.id %}"><button class="btn btn-info"><i class="fas fa-pen"></i> Изменить</button></a>

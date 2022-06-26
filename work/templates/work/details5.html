@@ -18,6 +18,5 @@
         </div>
         <a href="{% url 'WorkDelete' Work.id %}"><button class="btn btn-danger"><i class="fas fa-trash"></i> Удалить</button></a>
         <a href="{% url 'WorkUpdate' Work.id %}"><button class="btn btn-info"><i class="fas fa-pen"></i> Изменить</button></a>
-        {%  include "main/connect.html" %}
     </div>
 {% endblock %}

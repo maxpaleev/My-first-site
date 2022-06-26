@@ -16,21 +16,21 @@ def work_home(request):
 
 class WorkDetail(DetailView):
     model = Work
-    template_name = ''
+    template_name = 'work/details.html'
     context_object_name = 'Work'
 
-    if week.tm_wday == 0:
-        template_name = 'work/details.html'
-    elif week.tm_wday == 1:
-        template_name = 'work/details1.html'
-    elif week.tm_wday == 2:
-        template_name = 'work/details2.html'
-    elif week.tm_wday == 3:
-        template_name = 'work/details3.html'
-    elif week.tm_wday == 4:
-        template_name = 'work/details4.html'
-    elif week.tm_wday == 5:
-        template_name = 'work/details5.html'
+    # if week.tm_wday == 0:
+    #     template_name = 'work/details.html'
+    # elif week.tm_wday == 1:
+    #     template_name = 'work/details1.html'
+    # elif week.tm_wday == 2:
+    #     template_name = 'work/details2.html'
+    # elif week.tm_wday == 3:
+    #     template_name = 'work/details3.html'
+    # elif week.tm_wday == 4:
+    #     template_name = 'work/details4.html'
+    # elif week.tm_wday == 5:
+    #     template_name = 'work/details5.html'
 
 
 class WorkUpdate(UpdateView):
@@ -63,17 +63,17 @@ def work_create(request):
         'error': error
     }
     if Today.tm_wday == 0:
-        return render(request, 'work/create.html', data)
-    elif Today.tm_wday == 1:
         return render(request, 'work/create1.html', data)
-    elif Today.tm_wday == 2:
+    elif Today.tm_wday == 1:
         return render(request, 'work/create2.html', data)
-    elif Today.tm_wday == 3:
+    elif Today.tm_wday == 2:
         return render(request, 'work/create3.html', data)
-    elif Today.tm_wday == 4:
+    elif Today.tm_wday == 3:
         return render(request, 'work/create4.html', data)
-    elif Today.tm_wday == 5:
+    elif Today.tm_wday == 4:
         return render(request, 'work/create5.html', data)
+    elif Today.tm_wday == 5:
+        return render(request, 'work/create.html', data)
     elif Today.tm_wday == 6:
         return render(request, 'work/create6.html', data)
     else:
