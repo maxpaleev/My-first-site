@@ -74,5 +74,7 @@ def work_create(request):
         return render(request, 'work/create4.html', data)
     elif Today.tm_wday == 5:
         return render(request, 'work/create5.html', data)
+    elif Today.tm_wday == 6:
+        return render(request, 'work/create6.html', data)
     else:
         return render(request, 'work/create.html', data)

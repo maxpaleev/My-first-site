@@ -4,24 +4,28 @@ from django.db import models
 
 week = time.localtime()
 
+day1 = ""
+
 if week.tm_wday == 0:
-    day = 'Понедельник'
+    day1 = 'Понедельник'
 elif week.tm_wday == 1:
-    day = 'Вторник'
+    day1 = 'Вторник'
 elif week.tm_wday == 2:
-    day = 'Среда'
+    day1 = 'Среда'
 elif week.tm_wday == 3:
-    day = 'Четверг'
+    day1 = 'Четверг'
 elif week.tm_wday == 4:
-    day = 'Пятница'
+    day1 = 'Пятница'
 elif week.tm_wday == 5:
-    day = 'Суббота'
+    day1 = 'Суббота'
+elif week.tm_wday == 6:
+    day1 = 'Воскресенье'
 
 time = week.tm_mday, week.tm_mon, week.tm_year
 
 
 class Work(models.Model):
-    day = models.CharField('День недели', max_length=50, default=day, null=True, blank=True)
+    day = models.CharField('День недели', max_length=50, default=day1, null=True, blank=True)
     rus = models.CharField('Русский', max_length=50, null=True, blank=True)
     match = models.CharField('Математика', max_length=50, null=True, blank=True)
     lit = models.CharField('Лит-ра', max_length=50, null=True, blank=True)
