@@ -63,17 +63,17 @@ def work_create(request):
         'error': error
     }
     if Today.tm_wday == 0:
-        return render(request, 'work/create.html', data)
-    elif Today.tm_wday == 1:
         return render(request, 'work/create1.html', data)
-    elif Today.tm_wday == 2:
+    elif Today.tm_wday == 1:
         return render(request, 'work/create2.html', data)
-    elif Today.tm_wday == 3:
+    elif Today.tm_wday == 2:
         return render(request, 'work/create3.html', data)
-    elif Today.tm_wday == 4:
+    elif Today.tm_wday == 3:
         return render(request, 'work/create4.html', data)
-    elif Today.tm_wday == 5:
+    elif Today.tm_wday == 4:
         return render(request, 'work/create5.html', data)
+    elif Today.tm_wday == 5:
+        return render(request, 'work/create.html', data)
     elif Today.tm_wday == 6:
         return render(request, 'work/create6.html', data)
     else:
