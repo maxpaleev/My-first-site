@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
 
 def index(request):
@@ -22,6 +23,7 @@ def about(request):
 
 def author(request):
     return render(request, "main/author.html")
+
 
 def contacts(request):
     return render(request, 'main/contacts.html')

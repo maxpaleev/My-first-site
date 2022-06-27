@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Articles
 from .forms import ArticlesForm
 from django.views.generic import DetailView, UpdateView, DeleteView
+from django.contrib.auth.decorators import login_required, permission_required
 
 
 def news_home(request):
@@ -28,6 +29,8 @@ class NewsDeleteViews(DeleteView):
     success_url = '/news'
 
 
+@permission_required('news.add_articles')
+@login_required
 def create(request):
     error = ''
     if request.method == 'POST':
