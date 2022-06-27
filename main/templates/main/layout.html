@@ -32,6 +32,7 @@
             <a href="{% url "author" %}"><li><i class="fas fa-user"></i> Об авторе</li></a>
             <a href="{% url 'contacts' %}"><li><i class="fas fa-paper-plane"></i> Контакты</li></a>
             <a href="http://127.0.0.1:8000/admin/login/?next=/admin/"><li><i class="fas fa-user"></i> Админка</li></a>
+{#            <a href="{% url 'signup' %}"><li><i class="fas fa-user"></i> Рег</li></a>#}
             <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить запись</button></li></a>
             <a href="{% url 'work-create' %}"><li><button class="btn btn-warning"><i class="fas fa-plus-circle"></i> Добавить дз</button></li></a>
 
@@ -41,6 +42,7 @@
             {% else %}
               <li><a href="{% url 'login'%}?next={{request.path}}">Войти</a></li>
             {% endif %}
+            <li><a href="{% url 'signup'%}?next={{request.path}}">Рег-ия</a></li>
         </ul>
     </aside>
     <main>
