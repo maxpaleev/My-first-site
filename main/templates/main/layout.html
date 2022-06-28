@@ -22,8 +22,8 @@
 <body>
     <aside>
 {#     <img src="{%  static "main/img/icon.jpg" %}" alt="Лого">#}
-        <span class ="logo">Сайт 7А</span>
-        <h3>Навигация</h3>
+        <span class ="logo">Сайт 7А</span><br>
+{#        <h3>Навигация</h3>#}
         <ul>
             <a href="{% url "home" %}"><li><i class="fas fa-home"></i> Главная</li></a>
             <a href="{% url "news_home" %}"><li><i class="fas fa-newspaper"></i> Новости</li></a>
@@ -42,7 +42,7 @@
             {% else %}
               <li><a href="{% url 'login'%}?next={{request.path}}">Войти</a></li>
             {% endif %}
-            <li><a href="{% url 'signup'%}?next={{request.path}}">Рег-ия</a></li>
+            <li><a href="{% url 'signup'%}?next={{request.path}}">Регистрация</a></li>
         </ul>
     </aside>
     <main>
