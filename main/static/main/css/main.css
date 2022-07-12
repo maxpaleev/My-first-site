@@ -7,6 +7,10 @@ a {
     text-decoration: none;
 }
 
+.class p {
+    font-size: 18px;
+    }
+
 label {
     margin-left: 2px;
     display: block;
@@ -103,7 +107,7 @@ main .features{
     width: 75%;
 }
 
-main .features h1 {font-size: 45px; text-align: center}
+main .features h1 {font-size: 45px; text-align: center; margin-top: -61px}
 main .features p {max-width: 400px; margin: 20px auto}
 
 main .author h1 {font-size: 50px}
@@ -177,6 +181,64 @@ button.Work.btn.btn-danger {
     text-align: center;
 }
 
+.checkbox.style-c {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox.style-c input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox.style-c input:checked ~ .checkbox__checkmark {
+  background-color: #f7cb15;
+}
+.checkbox.style-c input:checked ~ .checkbox__checkmark:after {
+  opacity: 1;
+}
+.checkbox.style-c:hover input ~ .checkbox__checkmark {
+  background-color: #eee;
+}
+.checkbox.style-c:hover input:checked ~ .checkbox__checkmark {
+  background-color: #f7cb15;
+}
+.checkbox.style-c .checkbox__checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+.checkbox.style-c .checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.checkbox.style-c .checkbox__body {
+  color: white;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
 /*==========  Desktop First  ========== */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1920px) {
@@ -184,6 +246,7 @@ button.Work.btn.btn-danger {
     height: auto;
     }
 }
+
 
 @media only screen and (max-width: 1366px) {
   aside{
@@ -382,6 +445,11 @@ button.Work.btn.btn-danger {
     }
     .reg.features label {
     margin-left: 0px;
+    }
+    main .class p {
+    margin-left: 22px;
+    width: 371px;
+    font-size: 18px;
     }
 }
 /* Custom, iPhone Retina */

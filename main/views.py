@@ -27,3 +27,7 @@ def author(request):
 
 def contacts(request):
     return render(request, 'main/contacts.html')
+
+
+def clas(request):
+    return render(request, 'main/class.html')

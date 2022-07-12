@@ -25,5 +25,5 @@ urlpatterns = [
     path("news", include("news.urls")),
     path("homework/", include("work.urls")),
     path('accounts/', include('django.contrib.auth.urls')),
-    path("signup/", include("account.urls"))
+    path("signup/", include("account.urls")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
