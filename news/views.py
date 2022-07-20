@@ -49,3 +49,8 @@ def create(request):
     }
 
     return render(request, 'news/create.html', data)
+
+
+def hot_news(request):
+    news = Articles.objects.order_by('-date')
+    return render(request, 'news/hot_news.html', {'news': news})

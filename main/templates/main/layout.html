@@ -32,6 +32,7 @@
               <div class="dropdown-content">
                 <a href="{% url "home" %}"><i class="fas fa-home"></i> Главная</a>
                   <a href="{% url "news_home" %}"><i class="fas fa-newspaper"></i> Новости</a>
+              <a href="{% url 'hot_news' %}"><i class="fas fa-fire"></i> Срочные новости</a>
                 <a href="{% url "work_home" %}"><i class="fas fa-book-open"></i> ДЗ</a>
                 <a href="{% url "about" %}"><i class="fas fa-address-card"></i> О сайте</a>
                 <a href="{% url "author" %}"><i class="fas fa-user"></i> Об авторе</a>
@@ -64,7 +65,7 @@
         <ul>
             <a href="{% url "home" %}"><li><i class="fas fa-home"></i> Главная</li></a>
             <a href="{% url "news_home" %}"><li><i class="fas fa-newspaper"></i> Новости</li></a><br>
-            <a href="#"><i class="fas fa-fire"></i> Срочные новости</a>
+            <a href="{% url 'hot_news' %}"><i class="fas fa-fire"></i> Срочные новости</a>
             <a href="{% url "work_home" %}"><li><i class="fas fa-book-open"></i> ДЗ</li></a>
             <a href="{% url "about" %}"><li><i class="fas fa-address-card"></i> О сайте</li></a>
             <a href="{% url "author" %}"><li><i class="fas fa-user"></i> Об авторе</li></a>

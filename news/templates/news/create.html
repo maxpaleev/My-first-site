@@ -3,11 +3,13 @@
 {% block title %}Создание нвости{% endblock %}
 
 {% block content %}
-
     <div class="features">
         <h1>Создание статьи</h1>
         <form method="post">
             {%  csrf_token %}
+            <p3>Если хотите сделать важную новость в название добавте слово 'Важно'</p3>
+            <br>
+            <br>
             {{ form.title }}<br>
             {{ form.anons }}<br>
             {{ form.full_text }}<br>
@@ -18,7 +20,7 @@
             </div>
 
         </form>
+</div>
 
 
-    </div>
 {% endblock %}

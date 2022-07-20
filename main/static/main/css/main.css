@@ -136,6 +136,13 @@ main .abc{
     margin: 20px 34%;
     text-align: left;
 }
+.alert-danger{
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+}
 
 form {
     margin-left: 28.5%;
@@ -258,6 +265,9 @@ button.Work.btn.btn-danger {
     .alert-warning {
     margin: 20px 23.5%;
     }
+    .alert-danger {
+    margin: 20px 23.5%;
+    }
     .Work .alert-warning {
     margin: -58px 25%;
     }
@@ -291,6 +301,14 @@ button.Work.btn.btn-danger {
         text-align: left;
         margin: 20px 34% 20px 27%;
     }
+
+    .alert-danger {
+    float: left;
+    clear: both;
+    width: 350px;
+        text-align: left;
+        margin: 20px 34% 20px 27%;
+    }
     .Work .alert-warning {
     margin: -70px 27%;
         width: 350px;
@@ -308,6 +326,9 @@ button.Work.btn.btn-danger {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .alert-warning {
+    margin: 20px 34% 20px 20%;
+    }
+    .alert-danger {
     margin: 20px 34% 20px 20%;
     }
     .Work .alert-warning {
@@ -375,11 +396,18 @@ button.Work.btn.btn-danger {
     .alert.alert-warning p {
     margin-left: 0px;
     }
+    .alert.alert-danger p {
+    margin-left: 0px;
+    }
     main .news p {
     margin-left: 52px;
     width: 100%;
     }
     .alert.alert-warning {
+    width: 257px;
+    margin-left: 89px;
+    }
+    .alert.alert-danger {
     width: 257px;
     margin-left: 89px;
     }
@@ -450,6 +478,11 @@ button.Work.btn.btn-danger {
     margin-left: 22px;
     width: 371px;
     font-size: 18px;
+    }
+
+    .main .news_create p {
+    max-width: 400px;
+    margin: 20px -105px;
     }
 }
 /* Custom, iPhone Retina */
