@@ -1,7 +1,11 @@
 body{
     background: #404040;
 }
-
+.container{
+    max-width: 2500px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 a {
     color: white;
     text-decoration: none;
@@ -16,12 +20,12 @@ label {
     display: block;
 }
 
-button.btn.btn-success {
-    margin-left: 0px;
-}
-.log.features a {
-    margin-left: 273px;
-}
+/*button.btn.btn-success {*/
+/*    margin-left: 0px;*/
+/*}*/
+/*.log.features a {*/
+/*    margin-left: 273px;*/
+/*}*/
 
 aside{
     float: left;
@@ -30,7 +34,7 @@ aside{
     padding: 2.5%;
     color: #fff;
     border-right: 5px solid #4d4d4d;
-    /*display: none;*/
+    display: none;
 }
 
 .dws-menu{
@@ -40,7 +44,7 @@ aside{
     height: 100%;
     color: #fff;
     border-bottom: 5px solid #4d4d4d;
-    display: none;
+    /*display: none;*/
 }
 
 ul.dws-ul{
@@ -56,7 +60,7 @@ li.dws-li{
 }
 span.logo {
     font-size: 30px;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     font-weight: bold;
     position: relative;
     margin-right: 20px;
@@ -104,11 +108,11 @@ main .features{
     color: white;
     margin-top: 100px;
     text-align: center;
-    width: 75%;
+    width: 100%;
 }
 
 main .features h1 {font-size: 45px; text-align: center; margin-top: -61px}
-main .features p {max-width: 400px; margin: 20px auto}
+main .features p {; margin: 20px auto}
 
 main .author h1 {font-size: 50px}
 main .author p {max-width: 400px; margin: 20px auto}
@@ -145,7 +149,8 @@ main .abc{
 }
 
 form {
-    margin-left: 28.5%;
+    margin-left: auto;
+    margin-right: auto;
     width: 500px;
     margin-top: 50px;
 }
@@ -263,28 +268,28 @@ button.Work.btn.btn-danger {
 
 @media only screen and (max-width: 1024px) {
     .alert-warning {
-    margin: 20px 23.5%;
+    /*margin: 20px 23.5%;*/
     }
     .alert-danger {
-    margin: 20px 23.5%;
+    /*margin: 20px 23.5%;*/
     }
     .Work .alert-warning {
-    margin: -58px 25%;
+    /*margin: -58px 25%;*/
     }
     button.Work.btn.btn-danger {
-    margin-left: 340px;
+    /*margin-left: 340px;*/
     }
     form {
-    width: 410px;
-    margin-left: 186px;
+    /*width: 410px;*/
+    /*margin-left: 186px;*/
     }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-    main .features h1 {
-        font-size: 35px;
-        margin-top: -70px;
-    }
+    /*main .features h1 {*/
+    /*    font-size: 35px;*/
+    /*    margin-top: -70px;*/
+    /*}*/
     a {
     font-size: 14px;
     }
@@ -317,6 +322,7 @@ button.Work.btn.btn-danger {
     float: left;
     margin-top: 35px;
     width: 40%;
+        margin-left: 30%;
     }
     button.Work.btn.btn-danger {
     width: 100px;
@@ -350,6 +356,7 @@ button.Work.btn.btn-danger {
     float: left;
     margin-top: 35px;
     width: 40%;
+        margin-left: 32%;
     }
     button.btn.btn-success {
     margin-left: -5px;
@@ -362,7 +369,7 @@ button.Work.btn.btn-danger {
     }
     .log.features p {
     max-width: 137px;
-    margin: -68px 52px -16px auto;
+    /*margin: -68px 52px -16px auto;*/
     }
 /*    aside{*/
 /*    display: none;*/
@@ -382,7 +389,7 @@ button.Work.btn.btn-danger {
     display: revert;
     }
     main .features h1 {
-    margin-left: 108px;
+    /*margin-left: 108px;*/
     font-size: 30px;
 
     }
@@ -432,7 +439,7 @@ button.Work.btn.btn-danger {
     main .features form {
     margin-top: 13px;
     width: 60%;
-    margin-left: 125px;
+    margin-left: 24%;
     }
     /*main .features form {*/
     /*margin-top: -84px;*/
@@ -446,7 +453,7 @@ button.Work.btn.btn-danger {
     margin-left: -31px;
     }
     main .log.features p {
-    margin-left: 147px;
+    margin-left: 32%;
     width: 100%;
     }
     .login button.btn.btn-success {

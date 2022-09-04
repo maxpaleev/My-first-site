@@ -31,14 +31,14 @@
               <button class="dropbtn">Меню</button>
               <div class="dropdown-content">
                 <a href="{% url "home" %}"><i class="fas fa-home"></i> Главная</a>
+              <a href="{% url 'class' %}"><i class="fas fa-solid fa-users"></i> О классе</a>
                   <a href="{% url "news_home" %}"><i class="fas fa-newspaper"></i> Новости</a>
               <a href="{% url 'hot_news' %}"><i class="fas fa-fire"></i> Срочные новости</a>
                 <a href="{% url "work_home" %}"><i class="fas fa-book-open"></i> ДЗ</a>
-                <a href="{% url "about" %}"><i class="fas fa-address-card"></i> О сайте</a>
-                <a href="{% url "author" %}"><i class="fas fa-user"></i> Об авторе</a>
+{#                <a href="{% url "about" %}"><i class="fas fa-address-card"></i> О сайте</a>#}
+{#                <a href="{% url "author" %}"><i class="fas fa-user"></i> Об авторе</a>#}
                 <a href="{% url 'contacts' %}"><i class="fas fa-paper-plane"></i> Контакты</a>
-                <a href="{% url 'class' %}"><i class="fas fa-solid fa-users"></i> О классе</a>
-                <a href="http://127.0.0.1:8000/admin/login/?next=/admin/"><i class="fas fa-folder-open"></i> Админка</a>
+{#                <a href="http://127.0.0.1:8000/admin/login/?next=/admin/"><i class="fas fa-folder-open"></i> Админка</a>#}
                 <a href="{% url 'create' %}"><i class="fas fa-plus-circle"></i> Добавить запись</a>
                 <a href="{% url 'work-create' %}"><i class="fas fa-plus-circle"></i> Добавить дз</a>
                   {% if user.is_authenticated %}
@@ -84,8 +84,12 @@
         </ul>
     </aside>
     <main>
-        {% block content %}
-        {% endblock %}
+        <div class="container">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+
     </main>
 
 </body>
