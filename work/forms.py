@@ -1,5 +1,5 @@
 from .models import Work
-from django.forms import ModelForm, TextInput, DateTimeInput
+from django.forms import ModelForm, TextInput, DateTimeInput, Textarea
 
 
 class WorkForm(ModelForm):
@@ -9,67 +9,67 @@ class WorkForm(ModelForm):
                   'deutsch', 'geometria', 'fiz', 'date']
 
         widgets = {
-            'day': TextInput(attrs={
+            'day': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'День недели'
             }),
-            'rus': TextInput(attrs={
+            'rus': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Русский'
             }),
-            'alg': TextInput(attrs={
+            'alg': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Алгебра'
             }),
-            'fiz': TextInput(attrs={
+            'fiz': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Физика'
             }),
-            'geometria': TextInput(attrs={
+            'geometria': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Геометрия'
             }),
-            'lit': TextInput(attrs={
+            'lit': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Лит-ра'
             }),
-            'bio': TextInput(attrs={
+            'bio': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Биология'
             }),
-            'eng': TextInput(attrs={
+            'eng': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Английский'
             }),
-            'IZO': TextInput(attrs={
+            'IZO': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Изо'
             }),
-            'inf': TextInput(attrs={
+            'inf': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Информатика'
             }),
-            'geo': TextInput(attrs={
+            'geo': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'География'
             }),
-            'his': TextInput(attrs={
+            'his': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'История'
             }),
-            'science': TextInput(attrs={
+            'science': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Общество'
             }),
-            'teh': TextInput(attrs={
+            'teh': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Технология'
             }),
-            'deutsch': TextInput(attrs={
+            'deutsch': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Немецкий'
             }),
-            'date': TextInput(attrs={
+            'date': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Дата'
             }),

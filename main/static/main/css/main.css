@@ -1,6 +1,9 @@
 body{
     background: #404040;
 }
+.form-control{
+    height: 60px;
+}
 .container{
     max-width: 2500px;
     margin: 0 auto;
