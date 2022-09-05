@@ -5,8 +5,8 @@ from django.forms import ModelForm, TextInput, DateTimeInput
 class WorkForm(ModelForm):
     class Meta:
         model = Work
-        fields = ['day', 'rus', 'match', 'lit', 'bio', 'his', 'geo', 'eng', 'science', 'inf', 'IZO', 'teh',
-                  'deutsch', 'date']
+        fields = ['day', 'rus', 'alg', 'lit', 'bio', 'his', 'geo', 'eng', 'science', 'inf', 'IZO', 'teh',
+                  'deutsch', 'geometria', 'fiz', 'date']
 
         widgets = {
             'day': TextInput(attrs={
@@ -17,9 +17,17 @@ class WorkForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Русский'
             }),
-            'match': TextInput(attrs={
+            'alg': TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Мат-ка'
+                'placeholder': 'Алгебра'
+            }),
+            'fiz': TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Физика'
+            }),
+            'geometria': TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Геометрия'
             }),
             'lit': TextInput(attrs={
                 'class': 'form-control',

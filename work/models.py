@@ -27,7 +27,9 @@ time = week.tm_mday, week.tm_mon, week.tm_year
 class Work(models.Model):
     day = models.CharField('День недели', max_length=50, default=day1, null=True, blank=True)
     rus = models.CharField('Русский', max_length=50, null=True, blank=True)
-    match = models.CharField('Математика', max_length=50, null=True, blank=True)
+    alg = models.CharField('Алгебра', max_length=50, null=True, blank=True)
+    geometria = models.CharField('Геометрия', max_length=50, null=True, blank=True)
+    fiz = models.CharField('Физика', max_length=50, null=True, blank=True)
     lit = models.CharField('Лит-ра', max_length=50, null=True, blank=True)
     bio = models.CharField('Биология', max_length=50, null=True, blank=True)
     eng = models.CharField('Английский', max_length=50, null=True, blank=True)
