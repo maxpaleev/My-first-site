@@ -25,22 +25,22 @@ time = week.tm_mday, week.tm_mon, week.tm_year
 
 
 class Work(models.Model):
-    day = models.CharField('День недели', max_length=50, default=day1, null=True, blank=True)
-    rus = models.CharField('Русский', max_length=50, null=True, blank=True)
-    alg = models.CharField('Алгебра', max_length=50, null=True, blank=True)
-    geometria = models.CharField('Геометрия', max_length=50, null=True, blank=True)
-    fiz = models.CharField('Физика', max_length=50, null=True, blank=True)
-    lit = models.CharField('Лит-ра', max_length=50, null=True, blank=True)
-    bio = models.CharField('Биология', max_length=50, null=True, blank=True)
-    eng = models.CharField('Английский', max_length=50, null=True, blank=True)
-    IZO = models.CharField('Изо', max_length=50, null=True, blank=True)
-    inf = models.CharField('Информатика', max_length=50, null=True, blank=True)
-    geo = models.CharField('География', max_length=50, null=True, blank=True)
-    his = models.CharField('История', max_length=50, null=True, blank=True)
-    science = models.CharField('Общество', max_length=50, null=True, blank=True)
-    teh = models.CharField('Технология', max_length=50, null=True, blank=True)
-    deutsch = models.CharField('Немецкий', max_length=50, null=True, blank=True)
-    date = models.CharField('Дата', max_length=50, null=True, blank=True, default=time)
+    day = models.CharField('День недели', max_length=500, default=day1, null=True, blank=True)
+    rus = models.CharField('Русский', max_length=500, null=True, blank=True)
+    alg = models.CharField('Алгебра', max_length=500, null=True, blank=True)
+    geometria = models.CharField('Геометрия', max_length=500, null=True, blank=True)
+    fiz = models.CharField('Физика', max_length=500, null=True, blank=True)
+    lit = models.CharField('Лит-ра', max_length=500, null=True, blank=True)
+    bio = models.CharField('Биология', max_length=500, null=True, blank=True)
+    eng = models.CharField('Английский', max_length=500, null=True, blank=True)
+    IZO = models.CharField('Изо', max_length=500, null=True, blank=True)
+    inf = models.CharField('Информатика', max_length=500, null=True, blank=True)
+    geo = models.CharField('География', max_length=500, null=True, blank=True)
+    his = models.CharField('История', max_length=500, null=True, blank=True)
+    science = models.CharField('Общество', max_length=500, null=True, blank=True)
+    teh = models.CharField('Технология', max_length=500, null=True, blank=True)
+    deutsch = models.CharField('Немецкий', max_length=500, null=True, blank=True)
+    date = models.CharField('Дата', max_length=500, null=True, blank=True, default=time)
 
     def __str__(self):
         return f'День:{self.day}'

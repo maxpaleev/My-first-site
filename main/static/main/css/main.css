@@ -395,10 +395,10 @@ button.Work.btn.btn-danger {
     }
     main .features p {
     max-width: 400px;
-    margin: 20px 191px;
+    /*margin: 20px 191px;*/
     }
     button.btn.btn-warning {
-    margin-right: -111px;
+    /*margin-right: -111px;*/
     }
     .alert.alert-warning p {
     margin-left: 0px;
@@ -407,7 +407,7 @@ button.Work.btn.btn-danger {
     margin-left: 0px;
     }
     main .news p {
-    margin-left: 52px;
+    /*margin-left: 52px;*/
     width: 100%;
     }
     .alert.alert-warning {
@@ -419,7 +419,7 @@ button.Work.btn.btn-danger {
     margin-left: 89px;
     }
     button.btn.btn-danger {
-    margin-left: 103px;
+    /*margin-left: 103px;*/
     }
     button.btn.btn-success {
     margin-left: -65px;
@@ -482,9 +482,9 @@ button.Work.btn.btn-danger {
     margin-left: 0px;
     }
     main .class p {
-    margin-left: 22px;
+    /*margin-left: 22px;*/
     width: 371px;
-    font-size: 18px;
+    font-size: 17px;
     }
 
     .main .news_create p {
