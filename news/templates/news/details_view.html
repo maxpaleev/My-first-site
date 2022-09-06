@@ -8,8 +8,13 @@
         <h1>{{ articles.title }}</h1>
         <p>{{ articles.date }}</p>
         <p>{{ articles.full_text }}</p>
-        <a href="{% url 'news-delete' articles.id %}"><button class="btn btn-danger"><i class="fas fa-trash"></i> Удалить</button></a>
-        <a href="{% url 'news-update' articles.id %}"><button class="btn btn-info"><i class="fas fa-pen"></i> Изменить</button></a>
+        {% if 'news.delete_articles' in user.get_all_permissions %}
+             <a href="{% url 'news-delete' articles.id %}"><button class="btn btn-danger"><i class="fas fa-trash"></i> Удалить</button></a>
+        {% endif %}
+       {% if 'news.change_articles' in user.get_all_permissions %}
+             <a href="{% url 'news-update' articles.id %}"><button class="btn btn-info"><i class="fas fa-pen"></i> Изменить</button></a>
+        {% endif %}
+
 
 
     </div>

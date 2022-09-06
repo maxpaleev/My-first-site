@@ -16,6 +16,8 @@ class NewsDetailView(DetailView):
     context_object_name = 'articles'
 
 
+# @permission_required('news.change_articles')
+# @login_required
 class NewsUpdateViews(UpdateView):
     model = Articles
     template_name = 'news/create.html'
@@ -23,6 +25,8 @@ class NewsUpdateViews(UpdateView):
     form_class = ArticlesForm
 
 
+# @permission_required('news.delete_articles')
+# @login_required
 class NewsDeleteViews(DeleteView):
     model = Articles
     template_name = 'news/delete.html'
