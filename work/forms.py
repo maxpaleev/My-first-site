@@ -1,5 +1,5 @@
 from .models import Work
-from django.forms import ModelForm, TextInput, DateTimeInput, Textarea
+from django.forms import ModelForm, TextInput, DateInput, Textarea
 
 
 class WorkForm(ModelForm):
@@ -69,7 +69,7 @@ class WorkForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Немецкий'
             }),
-            'date': Textarea(attrs={
+            'date': DateInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Дата'
             }),
