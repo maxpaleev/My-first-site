@@ -28,12 +28,7 @@
             <p>Немецкий: {{ Work.deutsch }}</p>
 
         </div>
-        {% if 'work.delete_work' in user.get_all_permissions %}
-            <a href="{% url 'WorkDelete' Work.id %}"><button class="Work btn btn-danger"><i class="fas fa-trash"></i> Удалить</button></a>
-            {%  else %}
-
-        {% endif %}
-
+        <a href="{% url 'WorkDelete' Work.id %}"><button class="Work btn btn-danger"><i class="fas fa-trash"></i> Удалить</button></a>
 {#        <a href="{% url 'WorkUpdate' Work.id %}"><button class="btn btn-info"><i class="fas fa-pen"></i> Изменить</button></a>#}
     </div>
 {% endblock %}
