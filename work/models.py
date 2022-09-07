@@ -1,4 +1,3 @@
-from datetime import date
 import time
 
 from django.db import models
@@ -41,7 +40,7 @@ class Work(models.Model):
     science = models.TextField('Общество', max_length=500, null=True, blank=True)
     teh = models.TextField('Технология', max_length=500, null=True, blank=True)
     deutsch = models.TextField('Немецкий', max_length=500, null=True, blank=True)
-    date = models.DateField('Дата', max_length=500, null=True, blank=True, default=date.today())
+    date = models.TextField('Дата', max_length=500, null=True, blank=True, default=time)
 
     def __str__(self):
         return f'День:{self.day}'
