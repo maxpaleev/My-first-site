@@ -34,8 +34,6 @@ class WorkDetail(DetailView):
     #     template_name = 'work/details5.html'
 
 
-# @permission_required('work.change_work')
-# @login_required
 class WorkUpdate(UpdateView):
     model = Work
     template_name = 'work/create.html'
@@ -43,8 +41,6 @@ class WorkUpdate(UpdateView):
     form_class = WorkForm
 
 
-# @permission_required('work.delete_work')
-# @login_required
 class WorkDelete(DeleteView):
     model = Work
     success_url = '/homework'
