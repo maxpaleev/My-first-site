@@ -1,5 +1,5 @@
 body{
-    background: #404040;
+    background: url("img/img.png");
 }
 .form-control{
     height: 60px;
@@ -60,6 +60,12 @@ ul.dws-ul{
 li.dws-li{
     list-style: none;
     padding: 10px;
+
+background: linear-gradient(258.51deg, #FFFFFF 7.18%, rgba(255, 255, 255, 0.33) 111.07%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 }
 span.logo {
     font-size: 30px;
@@ -68,6 +74,12 @@ span.logo {
     position: relative;
     margin-right: 20px;
     margin-top: -2px;
+
+background: linear-gradient(258.51deg, #FFFFFF 7.18%, rgba(255, 255, 255, 0.33) 111.07%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 }
 
 aside img{
@@ -115,7 +127,7 @@ main .features{
 }
 
 main .features h1 {font-size: 45px; text-align: center; margin-top: -61px}
-main .features p {; margin: 20px auto}
+main .features p {; margin: 20px auto; }
 
 main .author h1 {font-size: 50px}
 main .author p {max-width: 400px; margin: 20px auto}

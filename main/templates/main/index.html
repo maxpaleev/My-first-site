@@ -8,8 +8,10 @@
 
     <div class="features">
         <h1>{{ title }}</h1>
-        <p>Текст</p>
-        <button class="btn btn-warning">На страницу про нас</button>
+        <p>Добро пожаловать на сайт 7А здесь вы сможете посмотреть актуальные новости и домашнее задание.</p>
+        <a href="{% url "news_home"%}" class="btn btn-warning">На страницу новостей</a>
+        <a href="{% url "work_home"%}" class="btn btn-danger">На страницу с ДЗ</a>
+
 
 
 {#  добавление элемента из списка #}
